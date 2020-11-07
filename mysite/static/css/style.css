@@ -1,0 +1,175 @@
+
+body {
+    background-image: url("https://cdn.wallpapersafari.com/70/33/qQxK4o.jpg");
+    opacity: 1;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+nav.navbar div.navbar-outer ul.ul-navbar li {
+    display: inline;
+    padding: 1em;
+    padding-bottom: 200%;
+}
+
+nav.navbar div.navbar-outer ul.ul-navbar li.admin {
+    margin-right:30px;
+}
+
+nav.navbar div.navbar-outer {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/*The text in the navbar*/
+nav.navbar div.navbar-outer ul.ul-navbar li a {
+    display: block;
+    color: white;
+    font-size:20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav.navbar div.navbar-outer ul.ul-navbar {
+    overflow: hidden;
+    margin-top: 200px;
+    list-style-type: none;
+    padding:0;
+}
+
+
+/* FOR THE FOOD OUTPUT -------------------------------------------------*/
+
+div.fooditem {
+    color: black;
+    font-weight: bold;
+    list-style: none;
+    font-size:18px;
+    border-color:red;
+    word-wrap: break-word;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+}
+
+div.food-desc {
+    color: black;
+    font-weight: bold;
+    list-style: none;
+    font-size:18px;
+    display:block;
+    border-color:red;
+    word-wrap: break-word;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+div.datetime {
+    color: blue;
+    font-weight: bold;
+    list-style: none;
+    font-size:18px;
+    word-wrap: break-word;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+div.post-container {
+    background-color:white;
+    border-style:solid;
+    border-color: red;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 200px 25%;
+    margin: 0px 410px 100px 470px;
+}
+
+div.image-container {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+
+
+/* FOR THE FORM -------------------------------------------------------  */
+
+form {
+    background-color:grey;
+    padding-top:10px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom:30px;
+    margin-top:30px;
+    margin-right:100px;
+    margin-left:300px;
+    opacity:0.92;
+    
+    
+}
+
+form label {
+    color:white;
+    font-family: sans-serif;
+    font-size:25;
+    float:left;
+}
+
+
+form input#id_name{
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    text-align:start;
+    font-size:30px;
+}
+
+form textarea#id_ingredients{
+    margin-left:48px;
+}
+
+form textarea#id_prep{
+
+    margin-left:30px;
+
+}
+
+form button {
+    
+    background-color:rgb(101, 255, 55);
+    border:0;
+    width:30%;
+    margin-left: 37%;
+    height: 10%;
+    font-size: 200%;
+    
+}
+
+ul.foodlist div.post {
+    background-color:white;
+    margin: 0px 150px 50px 300px;
+    padding: 50px 35px 120px;
+}
